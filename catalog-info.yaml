@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: pricing-api
+  description: This is the first attempt at generating a golden path repo/pipeline and service
+  tags:
+    - nodejs
+    - microservice
+    - golden-path
+  annotations:
+    github.com/project-slug: crh225/pricing-api
+    backstage.io/kubernetes-id: pricing-api
+    backstage.io/kubernetes-namespace: red-dev
+    backstage.io/kubernetes-cluster: shared-dev-cluster
+    argocd/app-name: pricing-api
+spec:
+  type: service
+  lifecycle: experimental
+  owner: red
+  system: platform
+  providesApis: []
+  consumesApis: []
