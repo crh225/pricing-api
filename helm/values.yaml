@@ -52,3 +52,11 @@ labels:
   app.kubernetes.io/name: pricing-api
   app.kubernetes.io/part-of: red
   app.kubernetes.io/managed-by: backstage
+
+istio:
+  enabled: false
+  domain: chrishouse.io
+  gateway: istio-ingress/main-gateway  # Hub gateway (cross-cluster routing)
+  preview:
+    enabled: false
+    hostname: ""  # Will be set to {service}-pr-{number}-{team}.chrishouse.io
