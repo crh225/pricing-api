@@ -59,4 +59,4 @@ istio:
   gateway: istio-ingress/main-gateway  # Hub gateway (cross-cluster routing)
   preview:
     enabled: false
-    hostname: ""  # Will be set to {service}-pr-{number}.{team}.chrishouse.io
+    hostname: ""  # Will be set to {service}-pr-{number}-{team}.chrishouse.io
